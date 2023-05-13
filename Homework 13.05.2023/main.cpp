@@ -76,12 +76,12 @@ public:
 int main() {
 	Base** base = new Base * [3] {
 		new Base(4, 1),
-		new Child(2, 3),
-		new Child2(5, 2)
+			new Child(2, 3),
+			new Child2(5, 2)
 	};
 	for (size_t i = 0; i < 3; i++)
 	{
-		cout << i+1 << ") " << base[i]->getValue() << ", " << base[i]->getValue2() << endl;
+		cout << i + 1 << ") " << base[i]->getValue() << ", " << base[i]->getValue2() << endl;
 	}
 	for (size_t i = 0; i < 3; i++)
 	{
